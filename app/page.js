@@ -29,18 +29,18 @@ export default function Home() {
     setIsDragging(false);
   };
 
-  // useEffect(() => {
-  //   const disableRightClick = (e) => e.preventDefault();
-  //   const disableKey = (e) => e.preventDefault();
+  useEffect(() => {
+    const disableRightClick = (e) => e.preventDefault();
+    const disableKey = (e) => e.preventDefault();
 
-  //   document.addEventListener("contextmenu", disableRightClick);
-  //   window.addEventListener("keydown", disableKey);
+    document.addEventListener("contextmenu", disableRightClick);
+    window.addEventListener("keydown", disableKey);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", disableRightClick);
-  //     window.removeEventListener("keydown", disableKey);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+      window.removeEventListener("keydown", disableKey);
+    };
+  }, []);
 
   function renderScreen() {
     switch (step) {

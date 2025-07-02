@@ -1,3 +1,4 @@
+import ToastProvider from "../components/ToastProvider";
 import "./globals.css";
 
 export const metadata = {
@@ -14,8 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white w-[1080px] h-[1920px] mx-auto overflow-hidden select-none touch-none">
+      <body className="bg-black text-white h-screen w-screen overflow-hidden mx-auto select-none touch-none">
         {children}
+        <ToastProvider />
       </body>
     </html>
   );

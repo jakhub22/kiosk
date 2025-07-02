@@ -1,4 +1,27 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-zona400: "ZonaPro-Regular", "sans-serif";
+  --font-zona600: "ZonaPro-SemiBold", "sans-serif";
+  --font-zona700: "ZonaPro-Bold", "sans-serif";
+}
+
+@font-face {
+  font-family: ZonaPro-Regular;
+  src: url("../public/fonts/zona_pro/ZonaPro-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: ZonaPro-SemiBold;
+  src: url("../public/fonts/zona_pro/ZonaPro-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: ZonaPro-Bold;
+  src: url("../public/fonts/zona_pro/ZonaPro-Bold.ttf");
+  font-weight: 700;
+}
 
 html,
 body {
